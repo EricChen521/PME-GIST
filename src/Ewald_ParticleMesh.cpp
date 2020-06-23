@@ -3,7 +3,7 @@
 //#incl ude <memory> // unique_ptr
 #include "Ewald_ParticleMesh.h"
 #include "CpptrajStdio.h"
-#include "helpme.h"
+//#include "helpme.h"
 #include <chrono>
 #include <ctime>
 
