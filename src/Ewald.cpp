@@ -375,7 +375,7 @@ double Ewald::Self6_GIST(std::vector<double>& atom_vdw_self) {
   {
     c6sum += ew6 * (*it * *it);
 
-    atom_vdw_self.push_back(ew6 * (*it * *it));
+    atom_vdw_self.push_back(ew6 * (*it * *it)/12.0);
 
   }
   t_self_.Stop();
