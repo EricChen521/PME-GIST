@@ -946,10 +946,6 @@ void Ewald::Setup_VDW_Correction(Topology const& topIn, AtomMask const& maskIn) 
   
   N_vdw_type_ = N_vdw_type; // this array will be used for decompose calculation, so keep the value
 
-  mprintf("DEBUG: %zu VDW types.\n", N_vdw_type.size());
-  for (Iarray::const_iterator it = N_vdw_type.begin(); it != N_vdw_type.end(); ++it)
-      mprintf("\tType %li = %i\n", it-N_vdw_type.begin(), *it);
-
 
   if (debug_ > 0) {
     //mprintf("DEBUG: %zu VDW types.\n", N_vdw_type.size());
